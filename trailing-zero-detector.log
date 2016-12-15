@@ -1,0 +1,188 @@
+Schema: HR
+--- Table: COUNTRIES All Ok
+--- Table: DEPARTMENTS All Ok
+--- Table: EMPLOYEES All Ok
+--- Table: JOBS All Ok
+--- Table: JOB_HISTORY All Ok
+--- Table: LOCATIONS All Ok
+--- Table: REGIONS All Ok
+Schema: OE
+--- Table: CATEGORIES_TAB All Ok
+--- Table: CUSTOMERS All Ok
+--- Table: INVENTORIES All Ok
+--- Table: ORDERS All Ok
+--- Table: ORDER_ITEMS All Ok
+--- Table: PRODUCT_DESCRIPTIONS All Ok
+--- Table: PRODUCT_INFORMATION All Ok
+--- Table: PROMOTIONS All Ok
+--- Table: WAREHOUSES All Ok
+Schema: DIP
+Schema: SH
+--- Table: CAL_MONTH_SALES_MV All Ok
+--- Table: CHANNELS All Ok
+--- Table: COSTS All Ok
+--- Table: COUNTRIES All Ok
+--- Table: CUSTOMERS All Ok
+--- Table: DR$SUP_TEXT_IDX$I All Ok
+--- Table: DR$SUP_TEXT_IDX$K All Ok
+--- Table: DR$SUP_TEXT_IDX$N All Ok
+--- Table: DR$SUP_TEXT_IDX$R All Ok
+--- Table: FWEEK_PSCAT_SALES_MV All Ok
+--- Table: PRODUCTS All Ok
+--- Table: PROMOTIONS All Ok
+--- Table: SALES All Ok
+--- Table: SALES_TRANSACTIONS_EXT All Ok
+--- Table: SUPPLEMENTARY_DEMOGRAPHICS All Ok
+--- Table: TIMES All Ok
+Schema: IX
+--- Table: AQ$_ORDERS_QUEUETABLE_G All Ok
+--- Table: AQ$_ORDERS_QUEUETABLE_H All Ok
+--- Table: AQ$_ORDERS_QUEUETABLE_I All Ok
+--- Table: AQ$_ORDERS_QUEUETABLE_S All Ok
+--- Table: AQ$_ORDERS_QUEUETABLE_T All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_C All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_G All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_H All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_I All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_S All Ok
+--- Table: AQ$_STREAMS_QUEUE_TABLE_T All Ok
+--- Table: ORDERS_QUEUETABLE All Ok
+--- Table: STREAMS_QUEUE_TABLE All Ok
+Schema: MDDATA
+Schema: PM
+--- Table: ONLINE_MEDIA All Ok
+--- Table: PRINT_MEDIA All Ok
+Schema: BI
+Schema: TSMSYS
+--- Table: SRS$ All Ok
+Schema: ORACLE_OCM
+Schema: BASELINE_TEST
+--- Table: BLT_TABLE All Ok
+--- Table: BLT_TABLE_2 All Ok
+Schema: BASELINE_TEST_2
+Schema: SCOTT
+--- Table: BONUS All Ok
+--- Table: DEPT All Ok
+--- Table: EMP All Ok
+--- Table: SALGRADE All Ok
+Schema: AVAIL
+--- Table: OBJECT_VERSION All Ok
+Schema: JKSTILL
+--- Table: AAS_TAB All Ok
+--- Table: IO_BEGIN All Ok
+--- Table: IO_END All Ok
+--- Table: NUM All Ok
+--- Table: ORA_1722 Trailing Zero Detected!!
+--- Table: PERFORMANCE_1722 Trailing Zero Detected!!
+--- Table: ROWCR_TEST All Ok
+--- Table: T1 All Ok
+--- Table: TID_DEMO All Ok
+--- Table: X All Ok
+Schema: GGTEST
+--- Table: GGCHKPT All Ok
+--- Table: GGCHKPT_LOX All Ok
+--- Table: TCUSTORD All Ok
+Schema: GGS_OWNER
+--- Table: GGS_DDL_COLUMNS All Ok
+--- Table: GGS_DDL_HIST All Ok
+--- Table: GGS_DDL_HIST_ALT All Ok
+--- Table: GGS_DDL_LOG_GROUPS All Ok
+--- Table: GGS_DDL_OBJECTS All Ok
+--- Table: GGS_DDL_PARTITIONS All Ok
+--- Table: GGS_DDL_PRIMARY_KEYS All Ok
+--- Table: GGS_DDL_RULES All Ok
+--- Table: GGS_DDL_RULES_LOG All Ok
+--- Table: GGS_MARKER All Ok
+--- Table: GGS_TEMP_COLS All Ok
+--- Table: GGS_TEMP_UK All Ok
+Schema: SOE
+--- Table: CUSTOMERS All Ok
+--- Table: INVENTORIES All Ok
+--- Table: LOGON All Ok
+--- Table: ORDERS All Ok
+--- Table: ORDER_ITEMS All Ok
+--- Table: PRODUCT_DESCRIPTIONS All Ok
+--- Table: PRODUCT_INFORMATION All Ok
+--- Table: WAREHOUSES All Ok
+Schema: RMAN10G
+--- Table: AL All Ok
+--- Table: BCB All Ok
+--- Table: BCF All Ok
+--- Table: BDF All Ok
+--- Table: BP All Ok
+--- Table: BRL All Ok
+--- Table: BS All Ok
+--- Table: BSF All Ok
+--- Table: CCB All Ok
+--- Table: CCF All Ok
+--- Table: CDF All Ok
+--- Table: CKP All Ok
+--- Table: CONF All Ok
+--- Table: DB All Ok
+--- Table: DBINC All Ok
+--- Table: DF All Ok
+--- Table: DFATT All Ok
+--- Table: FB All Ok
+--- Table: GRSP All Ok
+--- Table: NODE All Ok
+--- Table: OFFR All Ok
+--- Table: ORL All Ok
+--- Table: RLH All Ok
+--- Table: ROUT All Ok
+--- Table: RR All Ok
+--- Table: RSR All Ok
+--- Table: RT All Ok
+--- Table: SCR All Ok
+--- Table: SCRL All Ok
+--- Table: TF All Ok
+--- Table: TFATT All Ok
+--- Table: TS All Ok
+--- Table: TSATT All Ok
+--- Table: XAL All Ok
+--- Table: XCF All Ok
+--- Table: XDF All Ok
+Schema: RCAT11202
+--- Table: AL All Ok
+--- Table: BCB All Ok
+--- Table: BCF All Ok
+--- Table: BCR All Ok
+--- Table: BDF All Ok
+--- Table: BP All Ok
+--- Table: BRL All Ok
+--- Table: BS All Ok
+--- Table: BSF All Ok
+--- Table: CCB All Ok
+--- Table: CCF All Ok
+--- Table: CDF All Ok
+--- Table: CFS All Ok
+--- Table: CKP All Ok
+--- Table: CONF All Ok
+--- Table: DB All Ok
+--- Table: DBINC All Ok
+--- Table: DF All Ok
+--- Table: FB All Ok
+--- Table: GRSP All Ok
+--- Table: NODE All Ok
+--- Table: NRSP All Ok
+--- Table: OFFR All Ok
+--- Table: ORL All Ok
+--- Table: RLH All Ok
+--- Table: ROUT All Ok
+--- Table: RR All Ok
+--- Table: RSR All Ok
+--- Table: RT All Ok
+--- Table: SCR All Ok
+--- Table: SCRL All Ok
+--- Table: SITE_DFATT All Ok
+--- Table: SITE_TFATT All Ok
+--- Table: TF All Ok
+--- Table: TS All Ok
+--- Table: TSATT All Ok
+--- Table: VPC_DATABASES All Ok
+--- Table: XAL All Ok
+--- Table: XCF All Ok
+--- Table: XDF All Ok
+
+PL/SQL procedure successfully completed.
+
+Elapsed: 00:02:18.18

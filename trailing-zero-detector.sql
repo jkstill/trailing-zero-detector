@@ -67,7 +67,6 @@ is
 					and data_type = 'NUMBER'
 			)
 			loop
-				null;
 				pv_sql := pv_sql || ' ' || 'utl_raw.compare(rawtohex(' || crec.column_name || '), rawtohex(to_number(to_char(' || crec.column_name || ')))) +';
 			end loop;
 			pv_sql := substr(pv_sql,1,length(pv_sql)-1);
