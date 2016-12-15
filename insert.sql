@@ -3,7 +3,7 @@
 
 -- create a table with invalid numbers for some performance testing
 
-truncate table performance_1722;
+truncate table jkstill.performance_1722;
 
 commit;
 
@@ -26,7 +26,7 @@ begin
 
 		n_mynum := n_start + ( i * n_decrement);
 
-		insert into performance_1722 (n1) values(n_mynum);
+		insert into jkstill.performance_1722 (n1) values(n_mynum);
 
 		-- dbms_output.put_line('MYNUM: ' || mynum);
 		-- dbms_output.put_line('HEX: ' || rawtohex(utl_raw.cast_to_raw(mynum)));
@@ -34,9 +34,12 @@ begin
 
 		-- every 20th row is invalid number
 		if mod(i,3) = 0 then
-			insert into performance_1722 (n1) values(
+			insert into jkstill.performance_1722 (c1,c2,n1,n2) values(
+				rpad('X',64,'X'),
+				rpad('X',64,'X'),
 				--utl_raw.cast_to_number(utl_raw.concat(utl_raw.cast_from_number(n_mynum), hextoraw('1')))
-				utl_raw.cast_to_number(hextoraw(rawtohex(utl_raw.cast_from_number(n_mynum)) || '01'))
+				utl_raw.cast_to_number(hextoraw(rawtohex(utl_raw.cast_from_number(n_mynum)) || '01')),
+				n_mynum
 			);
 		end if;
 
