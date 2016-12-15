@@ -19,11 +19,6 @@ is
 
 	v_detector_sql varchar(32767);
 
-	-- add some error handling 
-	-- here is a reminder
-	sql_too_large exception;
-	pragma exception_init(sql_too_large,-20000);
-
 	procedure p ( str varchar2)
 	is
 	begin
@@ -62,21 +57,35 @@ is
 	begin
 
 		pv_sql := 'select sum(';
+		
+		begin
+			for crec in (
+				select column_name
+				from dba_tab_columns
+				where owner = upper(v_owner)
+					and table_name = upper(v_table_name)
+					and data_type = 'NUMBER'
+			)
+			loop
+				null;
+				pv_sql := pv_sql || ' ' || 'utl_raw.compare(rawtohex(' || crec.column_name || '), rawtohex(to_number(to_char(' || crec.column_name || ')))) +';
+			end loop;
+			pv_sql := substr(pv_sql,1,length(pv_sql)-1);
+			pv_sql := pv_sql || ' ) bitcompare_agg from ' || v_owner || '.' || v_table_name;
+		exception
+			when value_error then -- ora-6502
+				if sqlerrm like '%buffer too small%' then
+					pl(rpad('!',40,'!'));
+					pl('SQL Statement too large - check Manually');
+				else
+					raise;
+				end if;
+			when others then
+				raise;
+		end;
 
-		for crec in (
-			select column_name
-			from dba_tab_columns
-			where owner = upper(v_owner)
-				and table_name = upper(v_table_name)
-				and data_type = 'NUMBER'
-		)
-		loop
-			null;
-			pv_sql := pv_sql || ' ' || 'utl_raw.compare(rawtohex(' || crec.column_name || '), rawtohex(to_number(to_char(' || crec.column_name || ')))) +';
-		end loop;
-		pv_sql := substr(pv_sql,1,length(pv_sql)-1);
-		pv_sql := pv_sql || ' ) bitcompare_agg from ' || v_owner || '.' || v_table_name;
 		return pv_sql;
+
 	end;
 
 
